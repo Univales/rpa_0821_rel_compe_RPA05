@@ -11,7 +11,7 @@
   <sap:VirtualizedContainerService.HintSize>1483,4242</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Rel_Dev_Nossa_Remessa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="31">
+    <scg:List x:TypeArguments="x:String" Capacity="62">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -43,10 +43,18 @@
       <x:String>UiPath.Web</x:String>
       <x:String>UiPath.Web.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>bibliotecas_0821_sistema_online_windows</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Activities.System.Collections.Filters</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="92">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -92,6 +100,14 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>bibliotecas_0821_sistema_online_windows</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Rel_Dev_Nossa_Remessa" sap:VirtualizedContainerService.HintSize="974,4177" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -112,7 +128,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">330,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">360,77.5 360,87.5</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">390,40 477,40 477,87.5</av:PointCollection>
         <x:Double x:Key="Height">4140.5</x:Double>
         <x:Double x:Key="Width">940</x:Double>
       </scg:Dictionary>
@@ -124,11 +140,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">260,87.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">360,139.5 360,159.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">434,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">477,139.5 477,185.5 460,185.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -1061,7 +1077,7 @@
                                                                                                                                                                                           <av:Size x:Key="ShapeSize">200,81</av:Size>
                                                                                                                                                                                         </scg:Dictionary>
                                                                                                                                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                                                                                                                                      <Sequence DisplayName="Copiar" sap:VirtualizedContainerService.HintSize="496,1073" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                                                                                                                                                                      <Sequence DisplayName="Copiar" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                                                                                                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                                                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1186,13 +1202,47 @@
                                                                                                                                                                   <av:PointCollection x:Key="ConnectorLocation">830,3516 830,3554</av:PointCollection>
                                                                                                                                                                 </scg:Dictionary>
                                                                                                                                                               </sap:WorkflowViewStateService.ViewState>
-                                                                                                                                                              <b:digita_teclas boo_chave_especial="{x:Null}" boo_continue_erro="{x:Null}" DisplayName="Deseja Visualizar" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="digita_teclas_51" arr_verif_antes="[{&quot;Deseja visualizar&quot;}]" arr_verif_depois="[{&quot;Para visualizar&quot;}]" boo_resultado="[boo_Resultado]" int_atraso_entre_chaves="200" str_teclas="n">
-                                                                                                                                                                <sap:WorkflowViewStateService.ViewState>
-                                                                                                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                                                                                                                  </scg:Dictionary>
-                                                                                                                                                                </sap:WorkflowViewStateService.ViewState>
-                                                                                                                                                              </b:digita_teclas>
+                                                                                                                                                              <TryCatch sap:VirtualizedContainerService.HintSize="440,869" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                                                                                                                                                <TryCatch.Try>
+                                                                                                                                                                  <b:digita_teclas boo_chave_especial="{x:Null}" boo_continue_erro="{x:Null}" DisplayName="Deseja Visualizar" sap:VirtualizedContainerService.HintSize="334,396" sap2010:WorkflowViewState.IdRef="digita_teclas_51" arr_verif_antes="[{&quot;Deseja visualizar&quot;}]" arr_verif_depois="[{&quot;Para visualizar&quot;}]" boo_resultado="[boo_Resultado]" int_atraso_entre_chaves="200" str_teclas="n">
+                                                                                                                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                                                                                      </scg:Dictionary>
+                                                                                                                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                  </b:digita_teclas>
+                                                                                                                                                                </TryCatch.Try>
+                                                                                                                                                                <TryCatch.Catches>
+                                                                                                                                                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="406,706" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                                                                                                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                                                                                                      </scg:Dictionary>
+                                                                                                                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                    <ActivityAction x:TypeArguments="s:Exception">
+                                                                                                                                                                      <ActivityAction.Argument>
+                                                                                                                                                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                                                                                                                                      </ActivityAction.Argument>
+                                                                                                                                                                      <Sequence sap:VirtualizedContainerService.HintSize="400,637" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                                                                                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                                                                                          </scg:Dictionary>
+                                                                                                                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                        <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                                                                                                                                        <b:digita_teclas boo_chave_especial="{x:Null}" boo_continue_erro="{x:Null}" DisplayName="Deseja Visualizar" sap:VirtualizedContainerService.HintSize="338,396" sap2010:WorkflowViewState.IdRef="digita_teclas_53" arr_verif_antes="[{&quot;Deseja visualizar&quot;}]" arr_verif_depois="[{&quot;Para visualizar&quot;}]" boo_resultado="[boo_Resultado]" int_atraso_entre_chaves="200" str_teclas="n">
+                                                                                                                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                                                                                            </scg:Dictionary>
+                                                                                                                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                                                                                                                        </b:digita_teclas>
+                                                                                                                                                                      </Sequence>
+                                                                                                                                                                    </ActivityAction>
+                                                                                                                                                                  </Catch>
+                                                                                                                                                                </TryCatch.Catches>
+                                                                                                                                                              </TryCatch>
                                                                                                                                                               <FlowStep.Next>
                                                                                                                                                                 <FlowStep x:Name="__ReferenceID41">
                                                                                                                                                                   <sap:WorkflowViewStateService.ViewState>

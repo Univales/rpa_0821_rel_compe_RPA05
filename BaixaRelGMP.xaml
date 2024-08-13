@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="bAttCustNR" Type="InArgument(x:Boolean)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1521,5130</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1483,5186</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="43">
@@ -104,7 +104,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1481,5065" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="1481,5121" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="bErro" />
       <Variable x:TypeArguments="x:Boolean" Name="bExiste" />
@@ -121,7 +121,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1419,225" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1419,240" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -167,7 +167,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1419,3081" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="4" RetryInterval="00:00:03">
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1419,3122" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="4" RetryInterval="00:00:03">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="1377,2833" sap2010:WorkflowViewState.IdRef="Sequence_38">
@@ -549,13 +549,13 @@
                                                             <av:PointCollection x:Key="ConnectorLocation">300,632.5 300,681.5</av:PointCollection>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: FileZilla" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="e116ff57-6b68-4351-ac77-816a514955e0" Version="V2">
+                                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: FileZilla" sap:VirtualizedContainerService.HintSize="534,4938" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="e116ff57-6b68-4351-ac77-816a514955e0" Version="V2">
                                                           <uix:NApplicationCard.Body>
                                                             <ActivityAction x:TypeArguments="x:Object">
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="500,4586" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="500,4647" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                                                 <Sequence.Variables>
                                                                   <Variable x:TypeArguments="x:String" Name="Usuario" />
                                                                   <Variable x:TypeArguments="ss:SecureString" Name="Senha" />
@@ -801,9 +801,9 @@
                                                                     <uix:TargetAnchorable DesignTimeRectangle="606, 517, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlid='5100' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='5100' title='OK' check:text='OK' /&gt;" Guid="72516997-dd33-4553-a362-6e636023c44f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVGhD7dbLEYMgFIVheqIbmqEVGrAISrEDO7gRiRHETCYz5sDNnMW/UFl9PMQsyyIMF8HBERxcBT5NE/tBpXEDPs8zuzGCgyM4OIKDIzg4goPTBx6cGGNeWR+L70GcseLj/hzF23WcC8WYvukC37Bb0AO9Bg/uPCH9UwSecV04vY9erHEStucDPHo71Mre0wNewZalidhX9RPcrzvBeonN2P7pAr9ELFd+As9ne7MTBuk/V3hIY/d3Y6UH/MszPP9gryaob4rA1xrEfIS8u6VsP87BznJd4KnTPbxe8TV4Kl0NR0LXB648goMjODiCgyM4OIKDIzi4j+Ds/krjCpz9PoKDIzi0RR4GwbCBH2bPeQAAAABJRU5ErkJggg==" InformativeScreenshot="736428c776a567b5d8e4223a348b5c3f.png" ScopeSelectorArgument="&lt;wnd app='filezilla.exe' cls='#32770' title='O arquivo já existe no destino' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
                                                                   </uix:NClick.Target>
                                                                 </uix:NClick>
-                                                                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="438,90" sap2010:WorkflowViewState.IdRef="Delay_10" />
-                                                                <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bExiste]" sap:VirtualizedContainerService.HintSize="438,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[strCaminhoFilezilla+strRelGMP]" PathType="File" />
-                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,107" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[strCaminhoFilezilla+strRelGMP]" />
+                                                                <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="438,90" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                                                                <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bExiste]" sap:VirtualizedContainerService.HintSize="438,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[strCaminhoFilezilla+strRelGMP]" PathType="File" />
+                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,143" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[strCaminhoFilezilla+strRelGMP]" />
                                                               </Sequence>
                                                             </ActivityAction>
                                                           </uix:NApplicationCard.Body>
@@ -1007,7 +1007,7 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="400,263" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                    <Sequence sap:VirtualizedContainerService.HintSize="400,334" sap2010:WorkflowViewState.IdRef="Sequence_39">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1039,7 +1039,7 @@
       </ui:RetryScope.ActivityBody>
       <ui:RetryScope.Condition>
         <ActivityFunc x:TypeArguments="x:Boolean">
-          <ui:CheckFalse DisplayName="Check False" ErrorMessage="Erro Filezilla, tentando novamente" Expression="[bErro]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="CheckFalse_1">
+          <ui:CheckFalse DisplayName="Check False" ErrorMessage="Erro Filezilla, tentando novamente" Expression="[bErro]" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="CheckFalse_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
